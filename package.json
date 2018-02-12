@@ -1,0 +1,14 @@
+{
+  "name": "theory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chords.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Ardito",
+  "license": "ISC",
+  "dependencies": {
+    "tonal": "^1.1.3"
+  }
+}
