@@ -155,7 +155,7 @@ Max.addHandler(
 		let octave = 4;
 		for(var i = 0; i < scalePitches.length; i++){
 			scalePitches[i] = Note.midi(scalePitches[i] + octave.toString());
-			if(scalePitches[i] < scalePitches[i - 1]){
+			if(scalePitches[i] <= scalePitches[i - 1]){
 				scalePitches[i] += 12;
 				octave++;
 			}
