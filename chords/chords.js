@@ -4,7 +4,8 @@ chords.js
 
 Node script for retrieving chord info.
 
-To-Do: Fix error messages, add description, READ CHORDS REALTIME
+To-Do: Fix error messages, add description,
+add readMidi() function
 
 Max Ardito (2018)
 **************************************/
@@ -143,7 +144,7 @@ Max.addHandler(
 		let octave = 4;
 		for(var i = 0; i < chordPitches.length; i++){
 			chordPitches[i] = Note.midi(chordPitches[i] + octave.toString());
-			if(chordPitches[i] < chordPitches[i - 1]){
+			if(chordPitches[i] <= chordPitches[i - 1]){
 				chordPitches[i] += 12;
 				octave++;
 			}
